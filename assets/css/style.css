@@ -336,6 +336,11 @@ body {
     width: 90%;
     height: 60vh;
   }
+  .portfolio_links ul {
+    display: flex;
+    gap: 5%;
+    justify-content: center;
+  }
 }
 /* portfolio section design end */
 
@@ -384,7 +389,6 @@ body {
   flex-direction: column;
   gap: 5vh;
   color: #fff;
-  /* overflow-y: scroll; */
 }
 .box_date {
   font-size: 12px;
@@ -404,5 +408,19 @@ body {
   font-size: 16px;
   font-weight: 300;
   color: #858585;
+}
+@media only screen and (max-width: 600px) {
+  .resume_boxes {
+    display: block;
+  }
+  .education_boxes,
+  .experience_boxes {
+    width: 90%;
+    height: 100%;
+  }
+  .experience_boxes{
+    margin-top: 30%;
+
+  }
 }
 /* resume section design end */
