@@ -1,75 +1,230 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Colorlib By Narmin</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./assets/css/normalize.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./assets/css/normalize.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
     <script defer src="./assets/js/script.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <!-- header start -->
-     <header>
-        <nav class="colorlib_nav">
-            <div class="colorlib_left">
-                <div class="colorlib_logo">
-                    <img src="./assets/img/logo.png" alt="logo">
-                </div>
-                <div class="colorlib_rezume">+Rezume</div>
+    <header>
+      <nav class="colorlib_nav">
+        <div class="colorlib_left">
+          <div class="colorlib_logo">
+            <img src="./assets/img/logo.png" alt="logo" />
+          </div>
+          <div class="colorlib_rezume">+Rezume</div>
+        </div>
+        <div class="colorlib_right">
+          <div class="hidden_icons">
+            <div class="colorlib_icon hidden_icon">
+              <i class="fa-solid fa-desktop"></i>
             </div>
-            <div class="colorlib_right">
-                <div class="hidden_icons">
-                    <div class="colorlib_icon hidden_icon"><i class="fa-solid fa-desktop"></i></div>
-                    <div class="colorlib_icon hidden_icon"><i class="fa-solid fa-tablet-screen-button"></i></div>
-                    <div class="colorlib_icon hidden_icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
-                </div>
-                <div class="visible_icons">
-                    <div class="colorlib_icon colorlib_car visible_icon">
-                        <a href="https://colorlib.com/wp/template/rezume/#pricing"><i class="fa-solid fa-cart-shopping car_icon"></i></a></div>
-                    <div class="colorlib_icon remove_button visible_icon"><i class="fa-solid fa-xmark"></i></div>
-                </div>
+            <div class="colorlib_icon hidden_icon">
+              <i class="fa-solid fa-tablet-screen-button"></i>
             </div>
-        </nav>
-        <nav class="rezume_nav">
-            <div class="rezume_left"><</div>
-            <div class="rezume_right">></div>
-        </nav>
-        <nav class="main_nav">
-            <div class="main_links">
-                <ul>
-                    <li><a href="#">home</a></li>
-                    <li><a href="#">portfolio</a></li>
-                    <li><a href="#">resume</a></li>
-                    <li><a href="#">about</a></li>
-                    <li><a href="#">contact</a></li>
-                </ul>
+            <div class="colorlib_icon hidden_icon">
+              <i class="fa-solid fa-mobile-screen-button"></i>
             </div>
-            <div class="main_button">
-                <button id="menu_btn"><i class="fa-solid fa-bars"></i></button>
+          </div>
+          <div class="visible_icons">
+            <div class="colorlib_icon colorlib_car visible_icon">
+              <a href="https://colorlib.com/wp/template/rezume/#pricing"
+                ><i class="fa-solid fa-cart-shopping car_icon"></i
+              ></a>
             </div>
-        </nav>
-        <nav class="menu_nav">
-            <ul>
-                <li><a href="#">home</a></li>
-                <li><a href="#">portfolio</a></li>
-                <li><a href="#">resume</a></li>
-                <li><a href="#">about</a></li>
-                <li><a href="#">contact</a></li>
-            </ul>
-        </nav>
-     </header>
+            <div class="colorlib_icon remove_button visible_icon">
+              <i class="fa-solid fa-xmark"></i>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <nav class="rezume_nav">
+        <div class="rezume_left"><</div>
+        <div class="rezume_right">></div>
+      </nav>
+      <nav class="main_nav">
+        <div class="main_links">
+          <ul>
+            <li><a href="#">home</a></li>
+            <li><a href="#">portfolio</a></li>
+            <li><a href="#">resume</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">contact</a></li>
+          </ul>
+        </div>
+        <div class="main_button">
+          <button id="menu_btn"><i class="fa-solid fa-bars"></i></button>
+        </div>
+      </nav>
+      <nav class="menu_nav">
+        <ul>
+          <li><a href="#">home</a></li>
+          <li><a href="#">portfolio</a></li>
+          <li><a href="#">resume</a></li>
+          <li><a href="#">about</a></li>
+          <li><a href="#">contact</a></li>
+        </ul>
+      </nav>
+    </header>
     <!-- header end -->
-     <main>
-        <section class="hero">
-            <div class="hero_writing">
-                <span>Hello, I'm</span>
-                <h1>Charles Anderson</h1>
-                <p>and this is My Rezume</p>
+    <main>
+      <!-- hero section start -->
+      <section class="hero">
+        <div class="hero_writing">
+          <span>Hello, I'm</span>
+          <h1>Charles Anderson</h1>
+          <p>and this is My Rezume</p>
+        </div>
+      </section>
+      <!-- hero section end -->
+
+      <!-- portfolio section start -->
+      <section class="portfolio">
+        <div class="container">
+          <div class="heading">
+            <h2>Featured <span>Portfolio</span></h2>
+          </div>
+          <div class="portfolio_links">
+            <ul>
+              <li><a href="#" class="category_links">All</a></li>
+              <li><a href="#" class="category_links">Packaging</a></li>
+              <li><a href="#" class="category_links">Mockup</a></li>
+              <li><a href="#" class="category_links">Typography</a></li>
+              <li><a href="#" class="category_links">Photography</a></li>
+            </ul>
+          </div>
+          <div class="portfolio_products"></div>
+        </div>
+      </section>
+      <!-- portfolio section end -->
+
+      <section class="resume">
+        <div class="container">
+          <div class="heading">
+            <h2>My <span>Resume</span></h2>
+          </div>
+          <div class="resume_boxes">
+            <div class="education_boxes">
+              <div class="boxes_heading"><span>Education</span></div>
+              <div class="boxes">
+                <div class="resume_box">
+                  <p class="box_date">
+                    <i class="fa-solid fa-calendar-week"></i> March 2013 -
+                    Present
+                  </p>
+                  <p class="box_name">Masteral in Information Technology</p>
+                  <p class="box_parag">
+                    Even the all-powerful Pointing has no control about the
+                    blind texts it is an almost unorthographic.
+                  </p>
+                  <p class="box_place">New York University</p>
+                </div>
+                <div class="resume_box">
+                  <p class="box_date">
+                    <i class="fa-solid fa-calendar-week"></i> March 2013 -
+                    Present Deacember.
+                  </p>
+                  <p class="box_name">Masteral in Information Technology</p>
+                  <p class="box_parag">
+                    Even the all-powerful Pointing has no control about the
+                    blind texts it is an almost unorthographic.
+                  </p>
+                  <p class="box_place">New York University</p>
+                </div>
+                <div class="resume_box">
+                  <p class="box_date">
+                    <i class="fa-solid fa-calendar-week"></i> March 2013 -
+                    Present
+                  </p>
+                  <p class="box_name">Masteral in Information Technology</p>
+                  <p class="box_parag">
+                    Even the all-powerful Pointing has no control about the
+                    blind texts it is an almost unorthographic.
+                  </p>
+                  <p class="box_place">New York University</p>
+                </div>
+                <div class="resume_box">
+                  <p class="box_date">
+                    <i class="fa-solid fa-calendar-week"></i> March 2013 -
+                    Present Deacember.
+                  </p>
+                  <p class="box_name">Masteral in Information Technology</p>
+                  <p class="box_parag">
+                    Even the all-powerful Pointing has no control about the
+                    blind texts it is an almost unorthographic.
+                  </p>
+                  <p class="box_place">New York University</p>
+                </div>
+              </div>
             </div>
-        </section>
-     </main>
-</body>
+            <div class="experience_boxes">
+              <div class="boxes_heading"><span>Experience</span></div>
+              <div class="boxes">
+                <div class="resume_box">
+                  <p class="box_date">
+                    <i class="fa-solid fa-calendar-week"></i> March 2013 -
+                    Present
+                  </p>
+                  <p class="box_name">Lead Product Designer</p>
+                  <p class="box_parag">
+                    Even the all-powerful Pointing has no control about the
+                    blind texts it is an almost unorthographic.
+                  </p>
+                  <p class="box_place">Github</p>
+                </div>
+                <div class="resume_box">
+                  <p class="box_date">
+                    <i class="fa-solid fa-calendar-week"></i> March 2013 -
+                    Present
+                  </p>
+                  <p class="box_name">Lead Product Designer</p>
+                  <p class="box_parag">
+                    Even the all-powerful Pointing has no control about the
+                    blind texts it is an almost unorthographic.
+                  </p>
+                  <p class="box_place">Facebook</p>
+                </div>
+                <div class="resume_box">
+                  <p class="box_date">
+                    <i class="fa-solid fa-calendar-week"></i> March 2013 -
+                    Present
+                  </p>
+                  <p class="box_name">Lead Product Designer</p>
+                  <p class="box_parag">
+                    Even the all-powerful Pointing has no control about the
+                    blind texts it is an almost unorthographic.
+                  </p>
+                  <p class="box_place">Twitter</p>
+                </div>
+                <div class="resume_box">
+                  <p class="box_date">
+                    <i class="fa-solid fa-calendar-week"></i> March 2013 -
+                    Present
+                  </p>
+                  <p class="box_name">Lead Product Designer</p>
+                  <p class="box_parag">
+                    Even the all-powerful Pointing has no control about the
+                    blind texts it is an almost unorthographic.
+                  </p>
+                  <p class="box_place">Shopify</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
