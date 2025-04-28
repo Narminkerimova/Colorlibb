@@ -4,6 +4,7 @@ header {
 }
 body {
   background-color: #222;
+  scroll-behavior: smooth;
 }
 /* colorib nav start */
 .colorlib_nav {
@@ -196,6 +197,7 @@ body {
   }
   .visible_icon {
     font-size: 15px;
+    min-width: 40px;
   }
   .main_links {
     display: none;
@@ -428,12 +430,10 @@ body {
 .about {
   width: 100%;
   height: auto;
-  background-color: brown;
 }
 .about_container {
   width: 100%;
   height: 70%;
-  border: 1px solid white;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -499,7 +499,6 @@ body {
   .about_container {
     width: 100%;
     height: 70%;
-    border: 1px solid white;
     display: block;
   }
   .about_image {
@@ -516,3 +515,153 @@ body {
   }
 }
 /* about section design end */
+
+/* contact section design start */
+.contact{
+  width: 100%;
+  max-width: 100%;
+  height: 100vh;
+}
+.contact_container{
+  width: 100%;
+  height: 100%;
+  margin-top: 20vh;
+  display: flex;
+  justify-content: space-between;
+}
+.contact_touch{
+  width: 60%;
+  height: 100%;
+}
+.contact_details{
+  width: 30%;
+  height: 100%;
+}
+.boxes_forms{
+  width: 100%;
+  height: 80%;
+  margin-top: 5vh;
+}
+.boxes_forms form{
+  display: flex;
+  flex-direction: column;
+  gap: 5vh;
+}
+.boxes_forms form input{
+  height: 6vh;
+  border-radius: 5px;
+  border: none;
+}
+.boxes_forms form input{
+  font-weight: 500;
+  padding: 3%;
+  outline: none;
+  background-color: #444;
+}
+.boxes_forms form input::placeholder{
+color: #9b9b9b;
+}
+#mes_area{
+  width: 100%;
+  border-radius: 5px;
+  padding: 1%;
+  font-weight: 500;
+  height: 20vh;
+  background-color: #444;
+  outline: none;
+}
+.contact_form_btn{
+  min-width: 150px;
+  width: 25%;
+  height: 8vh;
+  background-color: #aaf52a;
+  border-radius: 25px;
+  border: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.detail_boxes{
+  width: 100%;
+  height: 50vh;
+  margin-top: 5vh;
+  display: flex;
+  flex-direction: column;
+  gap: 5vh;
+  padding-left: 2%;
+}
+.detail_name{
+  text-transform: uppercase;
+  color: #858585;
+  font-size: 15px;
+  font-weight: 700;
+}
+.detail_info{
+  color: #d4cfcf;
+  margin-top: 1vh;
+}
+@media only screen and (max-width: 600px) {
+  .contact_container{
+    display:block;
+  }
+  .contact_touch{
+    width: 100%;
+    height: 100%;
+  }
+  .contact_details{
+    width: 100%;
+    height: 100%;
+  }
+}
+/* contact section design end */
+
+/* footer design start */
+footer{
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer_box{
+  width: 60%;
+  height: 80%;
+}
+.footer_box p{
+  font-size: 16px;
+  font-weight: 400;
+  color: #6c757d;
+  text-align: center;
+}
+.footer_heart{
+  color: red;
+}
+.footer_box p span{
+  color: #7ac64d;
+}
+.footer_icons{
+  width: 55%;
+  height: 10vh;
+  margin: 10vh auto 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.foot_icon{
+  font-size: 25px;
+  color: #bac964;
+  background-color: #333;
+  padding: 3% 4%;
+  border-radius: 50%;
+}
+@media only screen and (max-width: 600px) {
+  footer{
+  margin-top: 90vh;
+  }
+  .footer_icons{
+  gap: 5%;
+  }
+  .footer_icons{
+   margin-top: 5vh;
+}
+/* footer design end */

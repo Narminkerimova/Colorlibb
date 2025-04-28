@@ -57,11 +57,11 @@
       <nav class="main_nav">
         <div class="main_links">
           <ul>
-            <li><a href="#">home</a></li>
-            <li><a href="#">portfolio</a></li>
-            <li><a href="#">resume</a></li>
-            <li><a href="#">about</a></li>
-            <li><a href="#">contact</a></li>
+            <li><a href="#home">home</a></li>
+            <li><a href="#portfolio">portfolio</a></li>
+            <li><a href="#resume">resume</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#contact">contact</a></li>
           </ul>
         </div>
         <div class="main_button">
@@ -81,7 +81,7 @@
     <!-- header end -->
     <main>
       <!-- hero section start -->
-      <section class="hero">
+      <section class="hero" id="home">
         <div class="hero_writing">
           <span>Hello, I'm</span>
           <h1>Charles Anderson</h1>
@@ -91,7 +91,7 @@
       <!-- hero section end -->
 
       <!-- portfolio section start -->
-      <section class="portfolio">
+      <section class="portfolio" id="portfolio">
         <div class="container">
           <div class="heading">
             <h2>Featured <span>Portfolio</span></h2>
@@ -111,7 +111,7 @@
       <!-- portfolio section end -->
 
       <!-- resume section start -->
-      <section class="resume">
+      <section class="resume" id="resume">
         <div class="container">
           <div class="heading">
             <h2>My <span>Resume</span></h2>
@@ -229,7 +229,7 @@
       <!-- resume section end -->
 
       <!-- about section start -->
-      <section class="about">
+      <section class="about" id="about">
         <div class="container">
           <div class="about_container">
             <div class="about_image">
@@ -259,6 +259,74 @@
         </div>
       </section>
       <!-- about section end -->
+
+      <!-- contact section start -->
+      <section class="contact" id="contact">
+        <div class="container">
+          <div class="contact_container">
+            <div class="contact_touch">
+              <div class="boxes_heading"><span>Get in Touch</span></div>
+              <div class="boxes_forms">
+                <form>
+                  <input type="text" placeholder="Your Name" />
+                  <input type="email" placeholder="Your Email" />
+                  <input type="text" placeholder="Your Phone" />
+                  <textarea
+                    name="message"
+                    id="mes_area"
+                    placeholder="Write a Message"
+                  ></textarea>
+                  <button class="contact_form_btn">send message</button>
+                </form>
+              </div>
+            </div>
+            <div class="contact_details">
+              <div class="boxes_heading"><span>My contact Details</span></div>
+              <div class="detail_boxes">
+                <div class="email_box">
+                  <div class="detail_name">email</div>
+                  <div class="detail_info">site@gmail.com</div>
+                </div>
+                <div class="phone_box">
+                  <div class="detail_name">Phone</div>
+                  <div class="detail_info">+30 976 1382 9921</div>
+                </div>
+                <div class="fax_box">
+                  <div class="detail_name">Fax</div>
+                  <div class="detail_info">+30 976 1382 9922</div>
+                </div>
+                <div class="adress_box">
+                  <div class="detail_name">Adress</div>
+                  <div class="detail_info">
+                    <p>San Francisco, CA</p>
+                    <p>4th Floor8 Lower</p>
+                    <p>San Francisco street, M1 50F</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- contact section end -->
     </main>
+    <!-- footer start -->
+    <footer>
+      <div class="footer_box">
+        <p>
+          Copyright © 2025 All rights reserved | This template is made with
+          <i class="fa-solid fa-heart footer_heart"></i> by
+          <span>Colorlib</span>
+        </p>
+        <div class="footer_icons">
+          <i class="fa-brands fa-facebook-f foot_icon"></i>
+          <i class="fa-brands fa-twitter foot_icon"></i>
+          <i class="fa-brands fa-instagram foot_icon"></i>
+          <i class="fa-brands fa-linkedin-in foot_icon"></i>
+          <i class="fa-brands fa-vimeo-v foot_icon"></i>
+        </div>
+      </div>
+    </footer>
+    <!-- footer end -->
   </body>
 </html>
