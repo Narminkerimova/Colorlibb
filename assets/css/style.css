@@ -215,6 +215,9 @@ body {
     margin-right: 40px;
     height: 100%;
   }
+  .colorlib_logo{
+    min-width: 150px;
+  }
 }
 @media only screen and (max-width: 600px) {
   .colorlib_rezume {
