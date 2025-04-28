@@ -197,7 +197,7 @@ body {
   }
   .visible_icon {
     font-size: 15px;
-    min-width: 40px;
+    min-width: 35px;
   }
   .main_links {
     display: none;
@@ -209,6 +209,11 @@ body {
   }
   .main_button {
     display: block;
+  }
+  .visible_icons {
+    width: 40%;
+    margin-right: 30px;
+    height: 93%;
   }
 }
 @media only screen and (max-width: 600px) {
